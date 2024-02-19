@@ -4,6 +4,7 @@
 
 ```
 git clone git@github.com:fransr/wsproxy.git .
+npm install
 
 echo "alias wsproxy='node $(pwd)/wsproxy.mjs'" >> ~/.bash_profile
 source ~/.bash_profile
