@@ -1,5 +1,14 @@
 # wsproxy 0.1
 
+### installation
+
+```
+git clone git@github.com:fransr/wsproxy.git wsproxy
+cd wsproxy
+echo 'alias wsproxy="node '"$(pwd)"'/wsproxy.mjs"' >> ~/.bash_profile
+source ~/.bash_profile
+```
+
 ### general arguments
 
 ```
@@ -24,7 +33,7 @@
     --response-match '"type":"data"' will respond when there's a message containing "type":"data"
 ```
 
-## sending wrapped messages
+### sending wrapped messages
 
 sending a POST to `/wrapped` will use the wrapper-payload to send a message and will generate UUIDs automatically for each message
 example:
@@ -44,7 +53,7 @@ will by default send a websocket message as:
 
 you can customize the wrapper-template using --wrapper-payload and the placeholders %w:id and %w:payload.
 
-## sending raw messages
+### sending raw messages
 
 sending a POST to `/raw?id=uniqueId` requires your POST-payload also to contain the same ID for a message to be returned
 example:
