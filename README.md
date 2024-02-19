@@ -1,4 +1,4 @@
-# WSPROXY 0.1
+# wsproxy 0.1
 
 ### general arguments
 
