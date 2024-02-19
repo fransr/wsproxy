@@ -5,7 +5,7 @@ import { httpServer } from './lib/http-server.mjs'
 
 await cli.argument_parse(process.argv);
 
-log.success('I AM GQLMAP WSPROXY');
+log.success('I AM WSPROXY');
 
 await websocket.start();
 httpServer.start();
