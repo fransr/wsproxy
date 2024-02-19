@@ -3,9 +3,9 @@
 ### installation
 
 ```
-git clone git@github.com:fransr/wsproxy.git wsproxy
-cd wsproxy
-echo 'alias wsproxy="node '"$(pwd)"'/wsproxy.mjs"' >> ~/.bash_profile
+git clone git@github.com:fransr/wsproxy.git .
+
+echo "alias wsproxy='node $(pwd)/wsproxy.mjs'" >> ~/.bash_profile
 source ~/.bash_profile
 ```
 
