@@ -1,6 +1,7 @@
 {
   "name": "wsproxy",
   "dependencies": {
+    "tunnel": "github:koichik/node-tunnel",
     "websocket": "^1.0.34"
   }
 }
